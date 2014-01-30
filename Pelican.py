@@ -41,7 +41,7 @@ UEArticleBody = urllib.quote(articleBody, safe='')
 #UEArticleBody
 
 #This creates a Notesy note with the name specified (it will append to an existing note if applicable) and sets the text.
-#toNotesy = notesy://x-callback-url/append?name=monkeys&text=[[draft]]
+#toNotesy = notesy://x-callback-url/append?name=whatever&text=[[draft]]
 
 toNotesy = 'notesy://x-callback-url/append?name=' + UEArticleTitle + '&text=Title%3A%20' + UEArticleTitle + '%0ADate%3A%20' + UAnow + '%0ATags%3A%20%0ACategory%3A%20%0ASlug%3A%20' + articleSlug + '%0AAuthor%3A%20Rob%0ASummary%3A%20%0AStatus%3A%20draft%0A%0A' + UEArticleBody
 
